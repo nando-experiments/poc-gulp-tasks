@@ -1,5 +1,5 @@
-import notify from 'gulp-notify'
-import bourbon from 'node-bourbon'
+const notify = require('gulp-notify')
+const bourbon = require('node-bourbon')
 
 module.exports = {
   plumberHandler: {

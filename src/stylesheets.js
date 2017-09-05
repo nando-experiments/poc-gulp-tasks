@@ -1,6 +1,6 @@
-import gulp from 'gulp'
-import plugins from 'gulp-load-plugins'
-import config from './config'
+const gulp = require('gulp')
+const plugins = require('gulp-load-plugins')
+const config = require('./config')
 
 const $ = plugins()
 
