@@ -1,7 +1,9 @@
 const notify = require('gulp-notify')
 const bourbon = require('node-bourbon')
 
-module.exports = {
+const defaults = {
+  dist: 'dist',
+  src: 'sass',
   plumberHandler: {
     errorHandler: notify.onError({
       title: 'Gulp',
@@ -31,4 +33,8 @@ module.exports = {
       'bb >= 10'
     ]
   }
+}
+
+module.exports = (options = {}) => {
+  return Object.assign({}, defaults, options)
 }
